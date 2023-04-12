@@ -7,4 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!val.startsWith("#") && !val.startsWith("rgb")) val = `#${val}`;
     display.style.backgroundColor = val;
   })
+  input.addEventListener("paste", () => {
+    input.value = "";
+  });
 })
