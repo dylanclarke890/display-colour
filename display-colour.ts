@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.addEventListener("click", () => input.focus());
   input.addEventListener("keyup", () => {
     let val = input.value;
-    if (!val.startsWith("#")) val = `#${val}`;
+    if (!val.startsWith("#") && !val.startsWith("rgb")) val = `#${val}`;
     display.style.backgroundColor = val;
   })
 })
