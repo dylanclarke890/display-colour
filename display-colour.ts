@@ -19,4 +19,5 @@ document.addEventListener("DOMContentLoaded", () => {
     input.value = colorPicker.value;
     input.dispatchEvent(new Event("keyup"));
   });
+  input.focus();
 });
